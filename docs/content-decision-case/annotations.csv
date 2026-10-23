@@ -1,0 +1,17 @@
+﻿id,post,aspect,sentiment,zh,en,note_zh,note_en
+U01,A,environment,positive,户外海边环境带来度假感。,Outdoor seaside setting feels relaxing.,体验评价；座位与天气未显示,Experience judgement; seat and weather unspecified
+U02,A,food,positive,认为生蚝鲜甜，浓汤浓郁但不腻。,Describes sweet oysters and rich but non-cloying chowder.,作者感受，不等于独立验证的新鲜度,"Author perception, not independently verified freshness"
+U03,A,food,positive,肯定海鲜炖汤的风味与鱼肉口感。,Praises seafood stew flavor and fish texture.,与其他帖子的菜品对应关系需核对,Exact dish comparability needs checking
+U04,B,food,negative,认为生蚝偏小且寡淡。,Finds the oysters small and bland.,份量描述与主观口感并存,Includes portion description and subjective taste
+U05,B,value,negative,认为主菜价格与份量不匹配。,Finds main-course portions poor value for the price.,价格为作者报告；不能当作现价,"Author-reported prices, not current prices"
+U06,B,service,negative,报告补面包等待较久且另收费。,Reports a long wait and an extra charge for more bread.,单次服务经历；日期未显示,Single service experience; date not shown
+U07,B,view,disputed,质疑能否直接看到日落，区分落日与余晖。,"Questions direct sunset visibility, distinguishing sunset from afterglow.",景观含义、座位、方向与时段待核实,"Meaning, seating, direction and time need verification"
+U08,C,environment,negative,认为雾影响海景，室外风大且冷。,"Reports fog affecting the view and a cold, windy outdoor experience.",天气与个人体感相关，不能视为固定属性,Weather and personal comfort are conditional
+U09,C,food,negative,不喜欢生蚝口感，认为意面夹生、炖菜过咸。,Dislikes oyster texture and finds pasta undercooked and stew too salty.,作者报告；不同菜品应分别复核,Author report; dishes should be checked separately
+U10,C,service,negative,报告点单与甜品等待较久。,Reports long waits for ordering and dessert.,单次服务经历，不推断长期表现,"One reported visit, not a long-term service assessment"
+U11,C,value,negative,报告较高人均消费，认为体验不值。,Reports high per-person spending and poor value.,作者报告的人均；与整桌总价不可直接比较,Per-person claim cannot be directly compared with a table total
+U12,D,environment,positive,肯定海边户外环境与聚餐氛围。,Praises outdoor seaside ambience for an occasion meal.,场景偏好；不代表所有游客需求,"Occasion preference, not every visitor’s priority"
+U13,D,view,positive,用落日描述用餐氛围。,Uses sunset imagery to describe the dining atmosphere.,与B形成待澄清的景观表述分歧,Creates a view-description discrepancy with B
+U14,D,food,positive,肯定海鲜拼盘与意面配料的体验。,Praises the seafood platter and pasta ingredients.,与其他帖子不能自动视为完全相同菜品,Not automatically the same dishes as other posts
+U15,D,food,negative,认为部分配菜表现一般。,Finds some side dishes unremarkable.,整体正面帖子也包含局部负面评价,An overall positive post contains negative aspects
+U16,D,value,neutral,提供含小费的整餐费用，但未显示用餐人数。,"Reports the total bill including tips, without party size.",不能换算人均；价格信息不自动等于负评,Cannot derive per-person cost; price disclosure is not automatically negative

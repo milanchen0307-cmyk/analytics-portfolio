@@ -1,0 +1,162 @@
+[
+  {
+    "id": "U01",
+    "post": "A",
+    "aspect": "environment",
+    "sentiment": "positive",
+    "zh": "户外海边环境带来度假感。",
+    "en": "Outdoor seaside setting feels relaxing.",
+    "note_zh": "体验评价；座位与天气未显示",
+    "note_en": "Experience judgement; seat and weather unspecified"
+  },
+  {
+    "id": "U02",
+    "post": "A",
+    "aspect": "food",
+    "sentiment": "positive",
+    "zh": "认为生蚝鲜甜，浓汤浓郁但不腻。",
+    "en": "Describes sweet oysters and rich but non-cloying chowder.",
+    "note_zh": "作者感受，不等于独立验证的新鲜度",
+    "note_en": "Author perception, not independently verified freshness"
+  },
+  {
+    "id": "U03",
+    "post": "A",
+    "aspect": "food",
+    "sentiment": "positive",
+    "zh": "肯定海鲜炖汤的风味与鱼肉口感。",
+    "en": "Praises seafood stew flavor and fish texture.",
+    "note_zh": "与其他帖子的菜品对应关系需核对",
+    "note_en": "Exact dish comparability needs checking"
+  },
+  {
+    "id": "U04",
+    "post": "B",
+    "aspect": "food",
+    "sentiment": "negative",
+    "zh": "认为生蚝偏小且寡淡。",
+    "en": "Finds the oysters small and bland.",
+    "note_zh": "份量描述与主观口感并存",
+    "note_en": "Includes portion description and subjective taste"
+  },
+  {
+    "id": "U05",
+    "post": "B",
+    "aspect": "value",
+    "sentiment": "negative",
+    "zh": "认为主菜价格与份量不匹配。",
+    "en": "Finds main-course portions poor value for the price.",
+    "note_zh": "价格为作者报告；不能当作现价",
+    "note_en": "Author-reported prices, not current prices"
+  },
+  {
+    "id": "U06",
+    "post": "B",
+    "aspect": "service",
+    "sentiment": "negative",
+    "zh": "报告补面包等待较久且另收费。",
+    "en": "Reports a long wait and an extra charge for more bread.",
+    "note_zh": "单次服务经历；日期未显示",
+    "note_en": "Single service experience; date not shown"
+  },
+  {
+    "id": "U07",
+    "post": "B",
+    "aspect": "view",
+    "sentiment": "disputed",
+    "zh": "质疑能否直接看到日落，区分落日与余晖。",
+    "en": "Questions direct sunset visibility, distinguishing sunset from afterglow.",
+    "note_zh": "景观含义、座位、方向与时段待核实",
+    "note_en": "Meaning, seating, direction and time need verification"
+  },
+  {
+    "id": "U08",
+    "post": "C",
+    "aspect": "environment",
+    "sentiment": "negative",
+    "zh": "认为雾影响海景，室外风大且冷。",
+    "en": "Reports fog affecting the view and a cold, windy outdoor experience.",
+    "note_zh": "天气与个人体感相关，不能视为固定属性",
+    "note_en": "Weather and personal comfort are conditional"
+  },
+  {
+    "id": "U09",
+    "post": "C",
+    "aspect": "food",
+    "sentiment": "negative",
+    "zh": "不喜欢生蚝口感，认为意面夹生、炖菜过咸。",
+    "en": "Dislikes oyster texture and finds pasta undercooked and stew too salty.",
+    "note_zh": "作者报告；不同菜品应分别复核",
+    "note_en": "Author report; dishes should be checked separately"
+  },
+  {
+    "id": "U10",
+    "post": "C",
+    "aspect": "service",
+    "sentiment": "negative",
+    "zh": "报告点单与甜品等待较久。",
+    "en": "Reports long waits for ordering and dessert.",
+    "note_zh": "单次服务经历，不推断长期表现",
+    "note_en": "One reported visit, not a long-term service assessment"
+  },
+  {
+    "id": "U11",
+    "post": "C",
+    "aspect": "value",
+    "sentiment": "negative",
+    "zh": "报告较高人均消费，认为体验不值。",
+    "en": "Reports high per-person spending and poor value.",
+    "note_zh": "作者报告的人均；与整桌总价不可直接比较",
+    "note_en": "Per-person claim cannot be directly compared with a table total"
+  },
+  {
+    "id": "U12",
+    "post": "D",
+    "aspect": "environment",
+    "sentiment": "positive",
+    "zh": "肯定海边户外环境与聚餐氛围。",
+    "en": "Praises outdoor seaside ambience for an occasion meal.",
+    "note_zh": "场景偏好；不代表所有游客需求",
+    "note_en": "Occasion preference, not every visitor’s priority"
+  },
+  {
+    "id": "U13",
+    "post": "D",
+    "aspect": "view",
+    "sentiment": "positive",
+    "zh": "用落日描述用餐氛围。",
+    "en": "Uses sunset imagery to describe the dining atmosphere.",
+    "note_zh": "与B形成待澄清的景观表述分歧",
+    "note_en": "Creates a view-description discrepancy with B"
+  },
+  {
+    "id": "U14",
+    "post": "D",
+    "aspect": "food",
+    "sentiment": "positive",
+    "zh": "肯定海鲜拼盘与意面配料的体验。",
+    "en": "Praises the seafood platter and pasta ingredients.",
+    "note_zh": "与其他帖子不能自动视为完全相同菜品",
+    "note_en": "Not automatically the same dishes as other posts"
+  },
+  {
+    "id": "U15",
+    "post": "D",
+    "aspect": "food",
+    "sentiment": "negative",
+    "zh": "认为部分配菜表现一般。",
+    "en": "Finds some side dishes unremarkable.",
+    "note_zh": "整体正面帖子也包含局部负面评价",
+    "note_en": "An overall positive post contains negative aspects"
+  },
+  {
+    "id": "U16",
+    "post": "D",
+    "aspect": "value",
+    "sentiment": "neutral",
+    "zh": "提供含小费的整餐费用，但未显示用餐人数。",
+    "en": "Reports the total bill including tips, without party size.",
+    "note_zh": "不能换算人均；价格信息不自动等于负评",
+    "note_en": "Cannot derive per-person cost; price disclosure is not automatically negative"
+  }
+]
