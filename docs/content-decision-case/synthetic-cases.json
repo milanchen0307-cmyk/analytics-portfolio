@@ -1,0 +1,218 @@
+[
+  {
+    "id": "S01",
+    "title": "高好评，但超预算",
+    "quote": "整体很满意，人均含小费约120美元。",
+    "positive": 9,
+    "total": 10,
+    "cost": 120,
+    "basis": "person",
+    "flags": {},
+    "budget": 70,
+    "needs": [],
+    "expected": "reject",
+    "source": "synthetic",
+    "title_en": "Popular but over budget",
+    "quote_en": "Very happy overall; the total per person including tips was $120."
+  },
+  {
+    "id": "S02",
+    "title": "整桌账单不等于人均",
+    "quote": "我们这一桌花了300美元，没有写几个人。",
+    "positive": 8,
+    "total": 10,
+    "cost": 300,
+    "basis": "table",
+    "flags": {},
+    "budget": 70,
+    "needs": [],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Table total is not per-person cost",
+    "quote_en": "The table paid $300. Party size was not stated."
+  },
+  {
+    "id": "S03",
+    "title": "价格高，仍在预算内",
+    "quote": "人均90美元，我觉得贵，但海景值得。",
+    "positive": 3,
+    "total": 10,
+    "cost": 90,
+    "basis": "person",
+    "flags": {
+      "view": "yes"
+    },
+    "budget": 100,
+    "needs": [
+      "view"
+    ],
+    "expected": "eligible",
+    "source": "synthetic",
+    "title_en": "Expensive but within budget",
+    "quote_en": "At $90 per person I found it expensive, but the view worthwhile."
+  },
+  {
+    "id": "S04",
+    "title": "好评中藏着口味问题",
+    "quote": "服务和环境不错，汤对我来说太咸。",
+    "positive": 8,
+    "total": 10,
+    "cost": 55,
+    "basis": "person",
+    "flags": {
+      "low_salt": "no"
+    },
+    "budget": 70,
+    "needs": [
+      "low_salt"
+    ],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Praise contains a taste conflict",
+    "quote_en": "Service and ambience were pleasant; the soup was too salty for me."
+  },
+  {
+    "id": "S05",
+    "title": "评论没有提及，不等于满足",
+    "quote": "只写了环境很好，没有描述菜品口味。",
+    "positive": 9,
+    "total": 10,
+    "cost": 55,
+    "basis": "person",
+    "flags": {},
+    "budget": 70,
+    "needs": [
+      "low_salt"
+    ],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Not mentioned is not satisfied",
+    "quote_en": "The review praises the setting but says nothing about taste."
+  },
+  {
+    "id": "S06",
+    "title": "景观表述有分歧",
+    "quote": "一条说可以直接看落日，另一条说只能看余晖。",
+    "positive": 8,
+    "total": 10,
+    "cost": 60,
+    "basis": "person",
+    "flags": {
+      "view": "conflict"
+    },
+    "budget": 80,
+    "needs": [
+      "view"
+    ],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Conflicting view descriptions",
+    "quote_en": "One review says direct sunset; another describes only afterglow."
+  },
+  {
+    "id": "S07",
+    "title": "差评原因可以接受",
+    "quote": "多数抱怨价格高；人均80美元，其他方面未见具体问题。",
+    "positive": 3,
+    "total": 10,
+    "cost": 80,
+    "basis": "person",
+    "flags": {},
+    "budget": 100,
+    "needs": [],
+    "expected": "eligible",
+    "source": "synthetic",
+    "title_en": "An acceptable negative reason",
+    "quote_en": "Most complaints concern price: $80 per person, with no other specific concerns noted."
+  },
+  {
+    "id": "S08",
+    "title": "预算边界",
+    "quote": "账单明确为每人含税及小费70美元。",
+    "positive": 7,
+    "total": 10,
+    "cost": 70,
+    "basis": "person",
+    "flags": {},
+    "budget": 70,
+    "needs": [],
+    "expected": "eligible",
+    "source": "synthetic",
+    "title_en": "Budget boundary",
+    "quote_en": "The bill explicitly states $70 per person including tax and tips."
+  },
+  {
+    "id": "S09",
+    "title": "没有费用信息",
+    "quote": "评论夸景观，但没有提供消费金额。",
+    "positive": 9,
+    "total": 10,
+    "cost": null,
+    "basis": "unknown",
+    "flags": {
+      "view": "yes"
+    },
+    "budget": 70,
+    "needs": [
+      "view"
+    ],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Missing price",
+    "quote_en": "The review praises the view but does not report spending."
+  },
+  {
+    "id": "S10",
+    "title": "跨语言一致性：英文",
+    "quote": "The total per person including tips was $120.",
+    "positive": 9,
+    "total": 10,
+    "cost": 120,
+    "basis": "person",
+    "flags": {},
+    "budget": 70,
+    "needs": [],
+    "expected": "reject",
+    "source": "synthetic",
+    "title_en": "Equivalent English wording",
+    "quote_en": "The total per person including tips was $120."
+  },
+  {
+    "id": "S11",
+    "title": "户外寒冷是条件信息",
+    "quote": "室外风大很冷；用户明确要求室内座位，帖子没有说明室内情况。",
+    "positive": 3,
+    "total": 10,
+    "cost": 60,
+    "basis": "person",
+    "flags": {},
+    "budget": 80,
+    "needs": [
+      "indoor"
+    ],
+    "expected": "unknown",
+    "source": "synthetic",
+    "title_en": "Outdoor cold is conditional",
+    "quote_en": "Outdoors was cold and windy. The user requires indoor seating, which is not described."
+  },
+  {
+    "id": "S12",
+    "title": "多个约束同时满足",
+    "quote": "人均含小费60美元，明确可预订室内座位。",
+    "positive": 8,
+    "total": 10,
+    "cost": 60,
+    "basis": "person",
+    "flags": {
+      "indoor": "yes"
+    },
+    "budget": 80,
+    "needs": [
+      "indoor"
+    ],
+    "expected": "eligible",
+    "source": "synthetic",
+    "title_en": "Multiple requirements satisfied",
+    "quote_en": "The total is $60 per person with tips; indoor reservations are explicitly available."
+  }
+]

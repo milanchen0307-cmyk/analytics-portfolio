@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const {decide,baseline}=require('./lab-engine.js');
+const cases=JSON.parse(fs.readFileSync(__dirname+'/synthetic-cases.json','utf8'));
+for(const c of cases)assert.equal(decide(c,c.budget,c.needs).status,c.expected,c.id);
+assert.equal(decide(cases[0],120,[]).status,'eligible');
+assert.equal(decide(cases[0],119,[]).status,'reject');
+assert.equal(decide(cases[1],1000,[]).status,'unknown');
+assert.equal(decide(cases[0],70,[]).status,decide(cases[9],70,[]).status);
+assert.equal(decide(cases[11],80,['indoor','low_salt']).status,'unknown');
+assert.equal(decide(cases[11],NaN,[]).status,'unknown');
+assert.equal(decide(cases[11],-1,[]).status,'unknown');
+assert.equal(baseline({...cases[0],positive:6}),'eligible');
+console.log('PASS: 12 fixture regressions + 8 boundary/invariant checks. Not user-effect evaluation.');
