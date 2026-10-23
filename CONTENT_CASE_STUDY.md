@@ -1,51 +1,496 @@
-# 从好评／差评到“适不适合我”
+# 一位海外华人如何借助社区内容完成本地生活决策
 
-## 项目定位
 
-海外餐饮决策场景的探索性内容分析练习。材料为用户提供的四张小红书帖子截图，围绕同一家餐厅；采用A–D匿名编号与原创转述，不公开原始截图、作者昵称或餐厅名称。不是平台级研究、真实投放实验或商业评价。
+以一次从旧金山出发的无车旅行复盘为例
 
-用户提供真实使用经历、样本与个人决策；本案例在AI辅助下完成初步标注、分析框架和页面实现。四张截图的发布日期与完整上下文未提供，A和B存在正文截断。样本为目的性选择，不估计全平台比例，也不据此鉴定广告或内容真实性。
 
-## 用户场景
+个人质性案例；AI辅助整理。旅行时间据本人回忆为三月春假，具体年份和日程未核实。餐饮截图属于后续复盘，不是已验证的原旅行决策日志。
 
-用户在海外常用小红书查找攻略、测评、活动与生活信息；Instagram更多用于朋友动态及趋势了解，TikTok使用较少。一次三月春假的旧金山周边旅行中，用户与朋友在无车条件下，通过帖子与沟通寻找当地接送服务，并安排太浩湖滑雪、蒙特雷皮划艇及观鲸。旅行年份尚未核对，不作为本案例的时间证据。
 
-用户判断接送服务时关注历史帖子、顾客反馈和沟通建议；选择观鲸服务时交叉阅读多位作者体验。餐厅决策中，用户会看不推荐的具体原因，而非直接排除所有差评对象。
+## 用户决策路径
 
-## 问题
 
-同一商家的相反评价，如何被整理成对特定用户有用的信息？单一正负情绪标签会遗漏哪些决策线索？
+### 需求出现
 
-## 小样本方法
+三月春假，从旧金山出发，希望无车也能去周边滑雪、划艇和观鲸。
 
-先区分帖子级整体倾向与评价单元级倾向。按评价对象与理由，把截图可见内容整理成16个初步评价单元，覆盖食物、性价比、环境、服务、景观表述5类对象。单元是分析整理单位，不是16条独立帖子或16位用户；部分复合句仍需后续细分。每条记录保留匿名帖子编号、转述、倾向与待核对条件。
 
-标注规则：没有提及记为缺失，不记为中性；仅提供价格且没有明确褒贬时可记为中性；整体好评中的单项不满单独保留；广告身份与真实质量不从措辞或点赞量推断；可以核查的景观说法与主观口味分开处理。
+用户的任务不是找热门景点，而是把愿望变成交通与时间上可执行的安排。
 
-## 样本观察
 
-1. A与D整体偏正面，B与C整体偏负面；D仍包含对配菜的不满。帖子级标签不足以代表全部具体评价。
-2. 价格、份量、口味、舒适度和氛围可能被不同作者赋予不同重要性。分歧不必然意味着有人提供虚假信息。
-3. 雾、风、室外座位等应作为情境条件，而非自动变成餐厅永久属性。
-4. 对“落日”的描述存在待核对分歧。直视落日、观看余晖与傍晚海景应区分；现有截图不能裁定餐厅朝向或实际视野。
-5. 中文帖子之间也存在明显分歧，语言相同不能替代偏好匹配。这里没有英文对照样本，不宣称发现了中英文内容的系统差异。
+出发地、交通方式、目的地、活动时间
 
-## 用户决策及其含义
 
-在阅读四张截图后，用户选择“不去”，理由是认为超出预算，而且对食物与风景的预期不足以支撑价格，性价比一般。这是阅读后的预期判断，不是到店后的质量结论。用户未提供具体预算金额。
+### 搜索与发现
 
-此前用户表示某些“贵”的负面原因可以接受，两次表达并不矛盾：对高价格的容忍取决于预期收益。此次呈现的是条件性权衡，不是固定的价格不敏感。因没有权重或阈值数据，本案例不构造量化效用分数。
+日常在小红书搜索攻略、教程、测评、活动和餐饮；Instagram主要用于朋友动态与海外新闻／趋势。
 
-## 内容策略提案（尚未验证）
 
-面向决策型搜索，先提取“对象—理由—情境”，再展示哪些因素与当前需求有关；对有分歧或缺失的证据提供补查问题。以正负情绪汇总作为对照方案，以按方面组织的摘要作为候选方案。不要替用户判定商家优劣。
+这是同一用户对平台的任务分工，不是平台用户整体特征。熟悉的表达和搜索习惯可能影响信息获取成本。
 
-可设计AI工作流：输入内容 → 提取最小评价单元和来源位置 → 标注对象、倾向、理由与条件 → 标记分歧及缺失信息 → 人工复核 → 生成针对用户约束的决策摘要。页面目前是人工核对的静态标注展示，没有运行或评测该AI流程。
 
-## 下一步如何验证
+搜索意图、信息缺口、使用场景
 
-扩充同主题样本并保留原帖链接与日期；由两名标注者独立标注重叠样本，记录对象边界、情绪与情境字段的分歧并修订规则。再让参与者阅读相同材料，比较情绪汇总与方面摘要两种呈现，记录找到关键约束的时间、理由复述完整度与主观有用性。没有实际执行前不报告准确率、一致性或提升幅度。
 
-## 可用于面试的表述
+### 比较与核对
 
-围绕海外餐饮搜索场景，对4份用户提供的帖子截图开展探索性内容分析，将可见评价整理为16个初步单元，区分食物、性价比、服务、环境与景观表述，结合个人选择分析评价分歧与偏好匹配，提出“对象—理由—情境”标注规则及待验证的AI辅助内容整理流程。
+观鲸时参考多个作者的亲身体验；餐饮时会阅读差评的具体原因，而非见到差评就排除。
+
+
+负面评价的价值来自是否触及自己的约束；“贵”与“不值得”需要分开。
+
+
+对象、理由、情境、可接受条件
+
+
+### 建立信任
+
+接送服务来自当地华人的兼职；历史帖子、过往顾客好评，以及沟通时给出的专业建议共同影响了选择。
+
+
+可能的解释：同语沟通减少理解负担，历史记录与服务细节提供判断依据。这些信任线索不能认证身份、资质或安全；其独立作用尚未测量。
+
+
+付费关系、服务范围、证据来源、待确认项
+
+
+### 选择与复盘
+
+旅行中完成了太浩湖滑雪、蒙特雷划艇与观鲸。后来阅读四篇餐饮截图时，因预算与预期体验不匹配决定不去该餐厅。
+
+
+实际出行回忆与后续餐饮复盘分开记录；没有精确行程、商家订单或转化日志，不补写。
+
+
+实际行动、判断理由、后续体验与材料时间
+
+
+## 场景分析
+
+
+### 无车接送
+
+社区如何把“想去”连接到“能去”？
+
+用户通过当地华人的历史帖子、顾客反馈与沟通建议选择付费接送；没有保存价格、服务者身份或完整对话。
+
+“搭子”在此实际包含付费服务关系。内容理解应区分共同出游、付费接送与旅行产品，避免把熟悉的称呼当成同一种关系。
+
+交通官方资料提示：区域间抵达、目的地内接驳、最后一段路是不同问题。当地免费接驳不能自动解决旧金山往返。
+
+内容字段：收费／包含项目、接送范围、往返安排、取消条件、信息更新时间。先提示需要确认什么，再展示“适合无车游客”。
+
+[P3](#p3) [P4](#p4) [P5](#p5)
+
+
+### 观鲸选择
+
+“适合我”包含哪些体验权衡？
+
+用户比较几家公司的体验帖，期望船只大小适中、舒适度与观赏体验兼顾；自述实际体验符合预期。公司与船型未确认。
+
+这体现对活动体验的具体理解，但不能推出“中等船只更不晕”或保证近距离观鲸。选择理由应与可核验事实分开。
+
+运营商FAQ补充了甲板位置、出发准备等细节；英文社区摘录同样提出港口、时长与晕船顾虑。问题并不只存在于中文用户。
+
+内容字段：出发港、活动时长、甲板位置、观察条件、海况与个人体感的描述来源。对“不会晕”“一定看得到”等绝对说法进入复核。
+
+[P1](#p1) [P6](#p6)
+
+
+### 小众活动发现
+
+发现一个活动后，怎样才能真正参加？
+
+用户通过小红书发现并安排蒙特雷kayak活动，认为详细经验更易获取。现有材料未记录具体经营者与预订流程。
+
+社区提供的不只是灵感，也可能是降低参与门槛的解释。这里的“小众”是用户此前不熟悉，不等于客观市场规模小。
+
+经营者官方产品页包含时长、年龄、是否需要经验和提前到场要求；可把这些事实和个人体验搭配呈现。
+
+将“值得去”整理为参与准备：适合谁、需要什么经验、在哪里集合、如何预约、什么条件会改变安排。
+
+[P2](#p2)
+
+
+### 餐饮取舍
+
+同语社区内部为什么仍有相反评价？
+
+四份中文截图共16个初步单元，既有海鲜与海景好评，也有口味、服务、份量和费用差评。用户此次决定不去：超预算且预期体验不足。
+
+中文表达对用户更易理解，不意味着中文作者共享一种口味。价格接受度也随场景变化；要保留具体理由，不能以国籍替代偏好。
+
+餐饮分析依据用户提供的截图；未取得同一时期、同一餐厅的英文对照样本，不作中英文质量排名。
+
+方面级标签：菜品、甜咸与口感、份量、费用口径、服务等待、座位天气。对“落日”与“余晖”等事实含义分歧保留原始表述。
+
+
+
+
+## 社区与文化理解
+
+
+### 文化理解从使用情境开始
+
+本案例同时存在海外生活、无车、熟悉中文表达与明确体验偏好。它们可能共同影响搜索选择，需要分别检验语言、生活阶段和资源约束的作用。
+
+
+### 相同需求可以跨语言出现
+
+英文社区摘录也在询问无车活动、晕船与船型。两种语言材料的部分问题有交集；当前样本不支持比较两类社区的普遍偏好。
+
+
+### 本地化需要补背景，而不只是翻译
+
+集合地点、费用口径与接驳范围，对不熟悉当地服务的用户未必显然。可执行内容需要把隐含前提讲出来，这是待验证的产品方向。
+
+
+### 信任与适配是两条判断轴
+
+可信的作者也可能与你偏好不同；符合口味的帖子也未必足以确认服务可靠。来源可信度和用户适配度应分别处理。
+
+
+## 策略与验证计划（尚未执行）
+
+
+### 优先：把“有用”拆成可标注字段
+
+有态度但缺少行动信息，用户仍需反复搜索。
+
+先标注需求、对象、理由、条件、费用口径、时间与来源；真实材料上先做双人独立标注，记录分歧后再修订规范。
+
+字段一致率、缺失字段、分歧类型；不能以讨论后统一的标签冒充独立一致性。
+
+
+### 其次：补齐参与活动的关键信息
+
+发现活动不等于知道如何参与。
+
+做“无车参与准备”内容卡，将帖子中的体验与有来源的官方条件并列；未知项明确待确认，不由AI猜填。
+
+用信息量相当的原文与内容卡做探索性任务比较：关键问题答对数、遗漏约束、完成时间。
+
+
+### 再验证：跨语言问题来自哪里
+
+用户觉得中文更易懂，但原因可能是语言、格式、信息匹配或熟悉度。
+
+按同一活动／时间／使用场景采样中英文材料，比较原文、忠实翻译、结构化整理三个版本；控制信息量，不把语言当作者国籍。
+
+理解错误类型、关键条件回忆、主观负担；样本小只报告探索观察，不宣称总体文化差异。
+
+
+## 公开资料，检索日期2026-10-23
+
+
+### P1
+
+[Princess Monterey · FAQ](https://montereywhalewatching.com/frequently-asked-questions/)
+
+运营商区分上下层甲板的观景特点，并解释易晕船乘客的座位选择。这说明英文官方内容也可能很具体。
+
+用于补充“比较船的大小”之外的决策字段；不是用户实际预订公司的证明。
+
+
+### P2
+
+[Monterey Bay Kayaks · Monterey Bay](https://www.montereybaykayaks.com/monterey-bay.html)
+
+产品页列出活动时长、年龄条件、提前到场要求，并注明部分行程不要求经验。
+
+用于分析“发现活动”之后还需要哪些行动信息；不作为历史价格或用户已看过此页的证据。
+
+
+### P3
+
+[See Monterey · Getting here](https://www.seemonterey.com/plan-your-visit/getting-here/)
+
+目的地旅游机构分别介绍机场接驳、驾车以及经Salinas的铁路／巴士连接。
+
+帮助区分到达地区、目的地内移动与最后一段路；具体路线需另核实时刻。
+
+
+### P4
+
+[Town of Truckee · TART Connect](https://townoftruckee.gov/282/TART-Connect)
+
+地方政府介绍Truckee区域内免费、按需、门到门的出行服务，并链接服务范围与时刻信息。
+
+说明“当地有接驳”不等于“从旧金山出发全程解决”；这是补充研究，不是原旅行的替代路线结论。
+
+
+### P5
+
+[Reddit · Tips for a car free visit?](https://www.reddit.com/r/MontereyBay/comments/1aby41x/)
+
+公开检索摘要中，提问者寻找三月无车可达的活动；回复将步行距离与个人接受程度联系起来。
+
+仅使用检索可见摘录：说明英文社区也有情境化求助；未完整编码讨论，不能代表Reddit整体。
+
+
+### P6
+
+[Reddit · Whale watching recs?](https://www.reddit.com/r/MontereyBay/comments/14hyvty/)
+
+公开检索摘要讨论出发港、航行时间及船只大小与晕船顾虑。
+
+与用户“舒适度＋观赏体验”的问题有交集；不验证评论中的航行时间或因果说法。
+
+# How one overseas Chinese traveler uses community content to decide
+
+
+A retrospective of a car-free trip starting from San Francisco
+
+
+Personal qualitative case, AI-assisted. March spring-break timing is recalled; exact year and itinerary are unverified. Dining screenshots were supplied for later reflection, not a verified travel decision log.
+
+
+## Decision journey
+
+
+### Need
+
+During a March spring break, the traveler wanted skiing, kayaking and whale watching beyond San Francisco without a car.
+
+
+The task is to turn interests into a feasible plan, not simply identify popular attractions.
+
+
+Origin, transport mode, destination, timing
+
+
+### Search
+
+Xiaohongshu is used for guides, tutorials, reviews, activities and food; Instagram mainly for friends and overseas news/trends.
+
+
+This is one user’s division of tasks across platforms. Familiar wording and search habits may shape information costs.
+
+
+Intent, missing information, context
+
+
+### Compare
+
+The traveler compared multiple whale-watching accounts and read reasons behind negative dining reviews rather than rejecting every criticized option.
+
+
+A negative reason matters when it conflicts with a personal constraint. Expensive and poor value are different judgments.
+
+
+Aspect, reason, context, tolerable tradeoff
+
+
+### Trust
+
+The ride was a local Chinese resident’s paid side service. Historical posts, customer feedback and advice during communication informed the choice.
+
+
+A possible explanation: shared language reduces friction, while history and details inform judgment. These cues do not verify identity, credentials or safety; their individual effects are unmeasured.
+
+
+Paid relationship, scope, source, unresolved questions
+
+
+### Decide
+
+The trip included Tahoe skiing and Monterey kayaking/whale watching. Later, after reading four dining screenshots, the user declined that restaurant on budget/value grounds.
+
+
+Travel recollection and later dining reflection are separate evidence. Exact itineraries, operator bookings and conversion logs are not reconstructed.
+
+
+Action, reasons, feedback, evidence timing
+
+
+## Scenario analysis
+
+
+### Car-free travel
+
+How does community content bridge interest and access?
+
+The traveler selected a paid local ride using post history, feedback and advice. Price, provider identity and full messages are not available.
+
+The informal companion framing here includes a paid service. Content understanding should distinguish shared trips, paid transfers and tour products.
+
+Official sources separate inter-regional arrival, local transit and the last leg. Free local shuttles do not automatically solve round trips from San Francisco.
+
+Proposed fields: fee/inclusions, coverage, return arrangements, cancellation and update date. Explain what needs confirmation before assigning a car-free suitability tag.
+
+[P3](#p3) [P4](#p4) [P5](#p5)
+
+
+### Whale watching
+
+Which experience tradeoffs determine fit?
+
+The user compared operators through experience posts, seeking a boat-size/comfort/viewing balance, and reported that the experience met expectations. Operator and vessel are unconfirmed.
+
+This reveals concrete preferences, not proof that medium boats prevent seasickness or guarantee close viewing. Choice rationale and verified facts are distinct.
+
+Operator FAQs add deck-position and preparation details; English community excerpts also discuss port, duration and motion sensitivity. These concerns are not exclusive to Chinese users.
+
+Proposed fields: port, duration, deck, viewing conditions and source of sea-state/comfort claims. Absolute promises require review.
+
+[P1](#p1) [P6](#p6)
+
+
+### Activity discovery
+
+What turns discovery into participation?
+
+The user discovered and arranged Monterey kayaking through Xiaohongshu and found detailed accounts easier to obtain. The operator and booking process are not recorded.
+
+Community content may lower participation barriers as well as inspire. Niche means unfamiliar to this user, not objectively a small market.
+
+An operator’s page supplies duration, age, experience and arrival requirements. These factual fields can accompany personal accounts.
+
+Turn worth visiting into participation guidance: who it fits, experience needed, meeting point, booking and conditions that change the plan.
+
+[P2](#p2)
+
+
+### Dining tradeoffs
+
+Why do reviews conflict within the same language community?
+
+Four Chinese screenshots contain 16 preliminary units, covering seafood/views and negative taste/service/portion/value accounts. The user declined this time on budget and expected-value grounds.
+
+Chinese wording is more accessible to this user, but Chinese authors do not share one palate. Price tolerance varies by context; nationality cannot replace preference evidence.
+
+Dining analysis uses the supplied screenshots. No matched English reviews from the same period were obtained, so language quality is not ranked.
+
+Aspect labels: dish, sweetness/saltiness/texture, portion, cost basis, service wait and seating/weather. Preserve original wording for disputed factual meanings.
+
+
+
+
+## Community and culture
+
+
+### Start with context
+
+The case combines life abroad, no car, familiar Chinese wording and experience preferences. Their possible contributions to search choices require separate investigation.
+
+
+### Needs can cross languages
+
+English excerpts also ask about car-free activities, motion sensitivity and vessel size. Some questions overlap; this sample cannot compare community-wide preferences.
+
+
+### Localization adds context
+
+Meeting points, cost basis and transfer coverage may be unfamiliar to users new to a local service. Making assumptions explicit is a testable product direction.
+
+
+### Trust and fit are different
+
+A credible author may have different preferences; a relatable post may not establish service reliability. Source credibility and personal fit are separate dimensions.
+
+
+## Strategy and validation plans (not yet executed)
+
+
+### First: define useful content
+
+Opinion without actionable detail leaves repeat searches.
+
+Annotate intent, aspect, reason, condition, cost basis, time and source. Use independent dual annotation before resolving disagreements.
+
+Field agreement, missing fields and disagreement categories; do not report reconciled labels as independent agreement.
+
+
+### Next: support participation
+
+Discovery is not participation.
+
+Prototype a car-free preparation card pairing experiences with sourced official requirements. Leave unknowns unresolved rather than AI-filled.
+
+Compare equal-information text and cards in exploratory tasks: correct answers, missed constraints and completion time.
+
+
+### Then: locate language-related friction
+
+Chinese feels easier to this user, but language, format, relevance or familiarity may explain it.
+
+Match activity, time and context. Compare original wording, faithful translation and structured presentation while controlling information and avoiding nationality inference.
+
+Comprehension errors, recall and perceived effort. Small samples support exploratory observations, not population-level cultural claims.
+
+
+## Public sources, accessed 2026-10-23
+
+
+### P1
+
+[Princess Monterey · FAQ](https://montereywhalewatching.com/frequently-asked-questions/)
+
+The operator differentiates upper/lower deck viewing and seating considerations for motion-sensitive passengers. English official information can be specific.
+
+Adds decision fields beyond boat size; does not identify the user’s booked operator.
+
+
+### P2
+
+[Monterey Bay Kayaks · Monterey Bay](https://www.montereybaykayaks.com/monterey-bay.html)
+
+The product page supplies duration, age conditions, early-arrival requirements and experience requirements for specific tours.
+
+Identifies actionable information needed after discovery, not historic prices or proof the user consulted this page.
+
+
+### P3
+
+[See Monterey · Getting here](https://www.seemonterey.com/plan-your-visit/getting-here/)
+
+The destination organization describes airport transfers, driving and rail/bus connections via Salinas.
+
+Separates regional arrival, local travel and the last leg. Current schedules still require direct verification.
+
+
+### P4
+
+[Town of Truckee · TART Connect](https://townoftruckee.gov/282/TART-Connect)
+
+The town describes free on-demand door-to-door transport within Truckee and links to service areas and schedules.
+
+Local transport does not solve the whole trip from San Francisco. This is supplementary research, not a reconstructed travel route.
+
+
+### P5
+
+[Reddit · Tips for a car free visit?](https://www.reddit.com/r/MontereyBay/comments/1aby41x/)
+
+In the public search excerpt, a visitor asks about car-free activities in March; a reply connects walking distance with personal tolerance.
+
+Search-visible excerpt only: English communities also contain contextual requests. The full discussion was not coded and does not represent Reddit.
+
+
+### P6
+
+[Reddit · Whale watching recs?](https://www.reddit.com/r/MontereyBay/comments/14hyvty/)
+
+The public search excerpt discusses departure port, travel time and boat size in relation to motion-sickness concerns.
+
+Overlaps with the user’s comfort/viewing tradeoff; does not verify commenters’ travel-time or causal claims.
+
+
+## 项目使用说明
+
+本项目体现从海外社区使用场景出发，将个人观察拆解为内容字段、信任线索与可检验策略的能力。不是已完成的跨文化用户研究，也不声称参与者测试、标注一致率或业务提升。
+
+主案例：[在线阅读](https://milanchen0307-cmyk.github.io/analytics-portfolio/content-decision-case/)。四篇餐饮材料为附件；模拟实验仅用于规则演示。
+
+## 补充：社区语境与编码交付
+
+“搭子”在本案例中经用户澄清为付费接送；不根据社交称呼推断交易关系。共同出游、付费接送和经营主体身份分别判定，后者材料不足时保持未知。
+
+历史帖、顾客反馈、沟通专业度分别作为连续性、他人反馈、能力展示线索；它们不独立证明资质与安全。该机制不是华人社区独有。
+
+已完成的初步编码示例见 [coding-examples.csv](docs/content-decision-case/coding-examples.csv)。U16保留整桌费用口径；U07/U13保留落日与余晖表述分歧；U14/U15按评价对象拆分正负态度。没有开展双人一致性测量。
+
+产品接口演示：对分析者拟定的“旧金山 无车 观鲸”意图，识别出发地、活动港口、往返方式、时长及体验条件。缺失往返信息时不自动补全；绝对化“不会晕”进入复核；相反体验保留条件与来源。拟检查交通范围错配、关键条件遗漏、错误保证与理由保留情况。这些指标尚未实测。
+
+English: The user clarified that an informal companion label referred to a paid ride. Shared travel, paid transfers and business status are separate classifications. History, feedback and professional communication are trust cues, not proof of credentials. Actual annotation examples preserve table-cost basis, sunset-description disagreements and mixed aspect sentiment. A proposed product interface surfaces missing return transport and reviews absolute claims; its metrics have not been measured.

@@ -11,4 +11,4 @@ Public interactive dashboards with bilingual interfaces, original analysis noteb
 
 - **[Omnichannel Growth Lab](https://milanchen0307-cmyk.github.io/omnichannel-growth-lab/)** — 独立模拟数据的客户优先级与试点规划. [Source](https://github.com/milanchen0307-cmyk/omnichannel-growth-lab)
 
-- **[Content strategy case study](https://milanchen0307-cmyk.github.io/analytics-portfolio/content-decision-case/)** — 4份匿名截图的探索性内容分析与个人决策案例；AI辅助整理。[完整分析](CONTENT_CASE_STUDY.md) · [标注数据](docs/content-decision-case/annotations.csv)
+- **[Content strategy case study](https://milanchen0307-cmyk.github.io/analytics-portfolio/content-decision-case/)** — 从旧金山出发的无车旅行个人案例：平台使用、信任线索、内容适配与公开资料交叉检查；AI辅助整理。[完整分析](CONTENT_CASE_STUDY.md) · [标注数据](docs/content-decision-case/annotations.csv)
