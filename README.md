@@ -8,3 +8,5 @@
 - **[Employee attrition insights](https://milanchen0307-cmyk.github.io/employee-attrition-insights/)** — 通过环形图与部门对比探索群体差异. [Source](https://github.com/milanchen0307-cmyk/employee-attrition-insights)
 
 Public interactive dashboards with bilingual interfaces, original analysis notebooks and reproducible scripts.
+
+- **[Omnichannel Growth Lab](https://milanchen0307-cmyk.github.io/omnichannel-growth-lab/)** — 独立模拟数据的客户优先级与试点规划. [Source](https://github.com/milanchen0307-cmyk/omnichannel-growth-lab)
